@@ -1,0 +1,68 @@
+body{
+    background-color: #222;
+    color: #ee6;
+}
+
+h1, h1:hover{
+    text-align: center;
+    color: gold;
+}
+
+p{
+    font-family: sans-serif;
+}
+
+p::first-line{ /*selcciona el primer parrafo de la etiqueta*/
+    color: #efe;
+}
+
+h1,h2,h3{
+    color: #eee;
+    text-transform: uppercase;
+}
+
+strong{
+    border-bottom:2px solid #eee;
+}
+
+.the-force{
+ background-color: #444;
+ font-weight: 700;
+}
+
+.light-side{
+ color: #66f;
+}
+
+.dark-side{
+ color: #f33;
+}
+
+#og-trilogy{
+    list-style-type: circle;
+}
+
+.movies-list:nth-of-type(2){ /*selecciona al segundo elemento del contenedor padre*/
+    padding-left: 20px;
+}
+
+/*selecciona al tercer elemento del contenedor padre y selecciona al ultimo elemento de la etiqueta li*/
+.movies-list:nth-of-type(3) li:last-child { 
+    margin-top: 10px;
+}
+
+.movies-list li:nth-child(odd) { /*selecciona a los hermanos de su mismo elemento y los elementos impares*/
+    background-color: #111;
+}
+
+.movies-list li:nth-child(even) { /*selecciona a los hermanos de su mismo elemento  y los elementos pares*/
+    background-color: #333;
+}
+
+a:visited{ /*Se activa cuando el enlace ya fue visitado*/
+    color: grey;
+}
+
+a:not([href]) { /*selecciona aquellos atributos que no tengan "href" */
+    font-style: italic;
+}
