@@ -1,0 +1,59 @@
+@media (width: 400px){
+   html body{
+        background-color: rgb(40, 60,80);
+    }
+}
+@media(max-width: 800px){
+  h1{
+    text-align: center;
+  }
+}
+@media(orientation: landscape){
+    acticle{
+        max-width: 50ch;
+    }
+}
+@media(min-height: 200px){
+    h1{
+        color: fuchsia;
+    }
+}
+@media print{
+    p{
+        font-family: serif;
+    }
+}
+@media (prefers-color-scheme: light) {
+ body{
+  background-color: #000;
+ }
+ h1{
+  color: #111;
+ }
+}
+@media screen and (hover: none){
+   a:hover{
+     color: #212;
+     padding:2px 5px ;
+   } 
+}
+
+@media screen and (min-width:800px) and (max-width: 900px) {
+ img{ 
+    display: none;
+ }
+}
+@media screen and (min-width:200px) and (max-width: 400px){
+ img{
+  height: 400px;
+  object-fit: cover;
+ }
+}
+@media (resolution: 2dppx){
+    article{
+        background-color: #667;
+    }
+}
+
+
+
